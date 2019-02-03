@@ -1,0 +1,2 @@
+hunter_add_package(Arkitekto)
+find_package(Arkitekto CONFIG REQUIRED)
