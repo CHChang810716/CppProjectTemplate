@@ -1,2 +1,2 @@
 # CppProjectTemplate
-C++ project template
+C++ CMake project template
