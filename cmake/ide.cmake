@@ -1,2 +1,4 @@
+akt_show_var(HUNTER_ROOT)
+akt_show_var(HUNTER_ENABLED)
 akt_vscode_gen_c_cpp_properties()
 akt_vscode_gen_launch()

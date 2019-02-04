@@ -18,6 +18,10 @@ endif()
 
 
 install(
+    FILES ${AKT_PROJECT_CONFIG}
+    DESTINATION ${AKT_CONFIG_INSTALL_DIR}
+)
+install(
     TARGETS ${exe_targets} ${lib_targets} ${test_targets}
     EXPORT ${AKT_TARGETS_EXPORT}
     BUNDLE DESTINATION . COMPONENT Runtime
