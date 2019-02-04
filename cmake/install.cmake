@@ -29,10 +29,25 @@ install(
     LIBRARY DESTINATION ${CMAKE_INSTALL_LIBDIR} COMPONENT Library
     ARCHIVE DESTINATION ${CMAKE_INSTALL_LIBDIR} COMPONENT Develop
 )
-install(
-    DIRECTORY include 
-    DESTINATION ${CMAKE_INSTALL_PREFIX} COMPONENT Develop
+file(GLOB_RECURSE headers 
+    ${CMAKE_SOURCE_DIR}/src/*.h 
+    ${CMAKE_SOURCE_DIR}/src/*.hpp 
 )
+foreach(header ${headers})
+    string(REPLACE 
+        "${CMAKE_SOURCE_DIR}/src" "include" 
+        dest_header 
+        ${header}
+    )
+    get_filename_component(inst_des ${dest_header} DIRECTORY)
+    install(FILES ${header}
+        DESTINATION ${inst_des})
+endforeach()
+
+# install(
+#     DIRECTORY include 
+#     DESTINATION ${CMAKE_INSTALL_PREFIX} COMPONENT Develop
+# )
 install(
     EXPORT ${AKT_TARGETS_EXPORT}
     NAMESPACE ${AKT_NAMESPACE}

@@ -22,6 +22,5 @@ option(INSTALL_DEPS "Install dependensies"      OFF)
 
 include(cmake/packages.cmake)
 include(cmake/src.cmake)
-include(cmake/test.cmake)
 include(cmake/ide.cmake)
 include(cmake/install.cmake)
