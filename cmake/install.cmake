@@ -9,7 +9,7 @@ write_basic_package_version_file(
     ${AKT_CONFIG_VERSION} COMPATIBILITY SameMajorVersion
 )
 if(INSTALL_DEPS)
-    akt_hunter_get_install_dir(hunter_install_dir)
+    akt_hunter_get_install_root(hunter_install_dir)
     list(APPEND BUNDLE_RT_DIRS ${hunter_install_dir}/bin)
     list(APPEND BUNDLE_RT_DIRS ${hunter_install_dir}/lib)
     configure_file(cmake/bundle.cmake.in ${CMAKE_BINARY_DIR}/bundle.cmake @ONLY)
