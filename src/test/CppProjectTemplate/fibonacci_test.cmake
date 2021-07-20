@@ -1,2 +1,2 @@
 include(cmake/scheme/test.cmake)
-target_link_libraries(${AKT_TARGET} PRIVATE CppProjectTemplate-fibonacci)
+target_link_libraries(${AKT_TARGET} PRIVATE CppProjectTemplate-cmakeBasedAddTargetsIn-fibonacci)
