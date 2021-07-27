@@ -59,3 +59,7 @@ if(INSTALL_DEPS)
         COMPONENT Dependencies
     )
 endif()
+
+unset(exe_targets CACHE) 
+unset(lib_targets CACHE) 
+unset(test_targets CACHE)
