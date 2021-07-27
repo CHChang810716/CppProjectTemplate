@@ -9,3 +9,5 @@ endif()
 if(UNIX)
     target_link_libraries(${AKT_TARGET} PRIVATE ${CMAKE_DL_LIBS} rt)
 endif()
+
+akt_show_var(AKT_TARGET)
