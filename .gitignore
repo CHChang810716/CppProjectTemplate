@@ -34,3 +34,4 @@
 build/
 stage/
 .vscode/
+*build/
