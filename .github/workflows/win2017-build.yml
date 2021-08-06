@@ -1,4 +1,4 @@
-name: win2019-build
+name: win2017-build
 
 on:
   push:
