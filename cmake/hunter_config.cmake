@@ -1,7 +1,6 @@
-# hunter_config(
-#     OpenCV
-#     VERSION "3.4.0-p0"
-#     CMAKE_ARGS 
-#         BUILD_SHARED_LIBS=ON
-#         ENABLE_PRECOMPILED_HEADERS=${OpenCV_ENABLE_PRECOMPILED_HEADERS}
-# )
+hunter_config(
+    OpenCV
+    VERSION "${HUNTER_OpenCV_VERSION}"
+    CMAKE_ARGS 
+    	WITH_IPP=OFF
+)
