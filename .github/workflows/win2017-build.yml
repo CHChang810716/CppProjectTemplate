@@ -1,4 +1,4 @@
-name: win2017-build
+name: win2017
 
 on:
   push:
