@@ -3,6 +3,7 @@
 ![linux](https://github.com/CHChang810716/CppProjectTemplate/actions/workflows/linux-build.yml/badge.svg)
 ![vs2019](https://github.com/CHChang810716/CppProjectTemplate/actions/workflows/win2019-build.yml/badge.svg)
 ![vs2017](https://github.com/CHChang810716/CppProjectTemplate/actions/workflows/win2017-build.yml/badge.svg)
+![mingw](https://github.com/CHChang810716/CppProjectTemplate/actions/workflows/mingw-build.yml/badge.svg)
 
 C++ CMake project template with Hunter package manager
 
