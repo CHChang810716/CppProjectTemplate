@@ -11,11 +11,10 @@ set(
     "Hunter cache servers"
 )
 HunterGate(
-    URL "https://github.com/CHChang810716/hunter.git"
-    SHA1 d3c2d71e63f40927abae3cbc7e78f5927f17ca30
+    URL "https://github.com/CHChang810716/hunter/archive/refs/tags/v0.23.312-chc.tar.gz"
+    SHA1 "08c490475de7c8d4713defb6f71eb427f1c42c6c"
     FILEPATH ${CMAKE_CURRENT_LIST_DIR}/cmake/hunter_config.cmake
 )
-
 project(CppProjectTemplate
     LANGUAGES C CXX 
     VERSION 0.1.0.0
