@@ -9,7 +9,7 @@ C++ CMake project template with [Hunter package manager](https://github.com/cpp-
 
 ## Prerequisite
 
-* CMake >= 3.10
+* CMake >= 3.21.0
 * C++ compiler (gcc, msvc, mingw)
 * IDE related (optional, only for VSCode)
   * VSCode
@@ -21,10 +21,9 @@ For MinGW users:
 
 Please remember to set the MinGW to the PATH environment.
 
-
 ## Getting Started
 
-This template is based on CMake and aimed to minimize the CMake programming for the developer.
+This template is based on CMake and aimed to minimize the CMake build script programming effort for the developer.
 
 But we still recommend the users of this template to learn the CMake language.
 
@@ -71,11 +70,14 @@ include(cmake/scheme/lib.cmake)
 
 1. Open cmake/packages.cmake
 2. Add hunter package. For example, add ```fmt``` package:
-
 ```cmake
 # ...The existing item in packages.cmake
 hunter_add_package(fmt)
 find_package(fmt CONFIG REQUIRED)
 ```
+3. All the source code can use the imported library directly, no needs to write link script.
 
-Other examples can be found in src/packages.cmake.
+* Other examples can be found in ```src/packages.cmake```.
+* All available packages can be found [here](https://github.com/CHChang810716/hunter/blob/master/cmake/configs/default.cmake).
+* All package import examples can be found [here](https://github.com/CHChang810716/hunter/tree/master/examples).
+
