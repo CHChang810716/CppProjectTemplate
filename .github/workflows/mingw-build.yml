@@ -2,9 +2,9 @@ name: mingw
 
 on:
   push:
-    branches: [ master ]
+    branches: [ test-pkg ]
   pull_request:
-    branches: [ master ]
+    branches: [ test-pkg ]
 
 env:
   # Customize the CMake build type here (Release, Debug, RelWithDebInfo, etc.)
