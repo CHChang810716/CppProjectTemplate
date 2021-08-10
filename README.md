@@ -1,9 +1,9 @@
 # CppProjectTemplate
 
-![linux](https://github.com/CHChang810716/CppProjectTemplate/actions/workflows/linux-build.yml/badge.svg)
-![vs2019](https://github.com/CHChang810716/CppProjectTemplate/actions/workflows/win2019-build.yml/badge.svg)
-![vs2017](https://github.com/CHChang810716/CppProjectTemplate/actions/workflows/win2017-build.yml/badge.svg)
-![mingw](https://github.com/CHChang810716/CppProjectTemplate/actions/workflows/mingw-build.yml/badge.svg)
+![linux](https://github.com/CHChang810716/CppProjectTemplate/actions/workflows/linux-build.yml/badge.svg?branch=test-pkg)
+![vs2019](https://github.com/CHChang810716/CppProjectTemplate/actions/workflows/win2019-build.yml/badge.svg?branch=test-pkg)
+![vs2017](https://github.com/CHChang810716/CppProjectTemplate/actions/workflows/win2017-build.yml/badge.svg?branch=test-pkg)
+![mingw](https://github.com/CHChang810716/CppProjectTemplate/actions/workflows/mingw-build.yml/badge.svg?branch=test-pkg)
 
 C++ CMake project template with [Hunter package manager](https://github.com/cpp-pm/hunter)
 
