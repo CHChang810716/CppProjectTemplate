@@ -22,4 +22,7 @@
 # Which means if the package include path is unusual and not at <hunter install path>/include then
 # such an include path will not included in AKT_VSCODE_C_CPP_INCLUDES.
 akt_vscode_gen_c_cpp_properties()
+if(NOT PRESERVE_VSCODE_LAUNCH AND EXISTS ${PROJECT_SOURCE_DIR}/.vscode/launch.json)
+  file(REMOVE ${PROJECT_SOURCE_DIR}/.vscode/launch.json)
+endif()
 akt_vscode_gen_launch()
